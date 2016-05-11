@@ -116,7 +116,7 @@ SUM:                            80           1172           1788           4052
 
 `AddEditTaskContract`是一个接口类，在此我们把它翻译成契约类，方便理解。值的注意的是，这个类是整个工程与我之前所看见过的其他MVP示例工程最不同的地方，Google工程师们将`View`和`Presenter`对应要实现的方法定义在了这个契约类中，维护或者阅读时一目了然，这确实是一个很棒的设计。我在这里贴出契约类的全部代码，代码不长，却短小精悍。
 
-```
+```java
 
 /**
  * This specifies the contract between the view and the presenter.
@@ -157,7 +157,7 @@ public interface AddEditTaskContract {
 
 这里要说一下，由于`AddEditTaskContract.View`继承了`BaseView<Presenter>`，因此`AddEditTaskFragment `实现了setPresenter方法。
 
-```
+```java
 /**
  * Main UI for the add task screen. Users can enter a task title and description.
  */
@@ -180,7 +180,7 @@ public class AddEditTaskFragment extends Fragment implements AddEditTaskContract
 
 `AddEditTaskPresenter`作为`AddEditTaskContract.Presenter`的具体实现，完成业务逻辑实现。这里很巧妙的使用自身的构造方法将自己作为`Presenter`注入到了`View`中。
 
-```
+```java
 public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
        TasksDataSource.GetTaskCallback {
        
@@ -210,7 +210,7 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
 
 `AddEditTaskActivity`作为控制器(Controller)，关联`AddEditTaskFragment`和`AddEditTaskPresenter`，这里用到了上面提到的AddEditTaskPresenter的构造方法，将`AddEditTaskFragment`作为`AddEditTaskPresenter`构造方法的第三个参数。
 
-```
+```java
 /**
  * Displays an add or edit task screen.
  */
