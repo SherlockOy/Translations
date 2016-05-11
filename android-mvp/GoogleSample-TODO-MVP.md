@@ -149,7 +149,7 @@ public interface AddEditTaskContract {
 
 ```
 
-贴完代码，忽然觉得都不需要把`AddEditTaskFragment`和`AddEditTaskPresenter`的代码再贴上来了，但是为了理解结构和功能这一点，单纯的阅读契约类就足够了。
+贴完代码，忽然觉得都不需要把`AddEditTaskFragment`和`AddEditTaskPresenter`的代码再贴上来了，光是为了理解结构和功能这一点，阅读契约类就足够了。
 
 ##### AddEditTaskFragment.java
 
