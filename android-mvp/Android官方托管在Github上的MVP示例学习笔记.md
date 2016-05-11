@@ -13,7 +13,7 @@
 注意：当我们讨论MVP的时候，`View`这个包含了太多意思，因此我们需要区分一下：
 
 * 称`android.view.View`为`Android View`
-* 称从presenter接收指令的view为`View`.
+* 称`从presenter接收指令的view`为`View`.
 
 #### Fragment
 
