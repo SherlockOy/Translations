@@ -22,8 +22,8 @@
 
 该项目之所以使用了Framgent主要有两个原因：
 
-* Activity和Fragment之间的区隔恰好适合本例的MVP实现：`Activity`刚好可以作为生成和连接`View`和`Presenter`控制器。
-* 适合平板设备的布局或者有多个视图的屏幕可以更好的利用Fragment框架。
+* Activity和Fragment之间的区隔恰好适合本例的MVP实现：`Activity`刚好可以作为生成和连接`View`和`Presenter`的控制器。
+* 适合平板设备的布局或者有多个视图的屏幕都可以更好的利用Fragment框架。
 
 #### 关键概念
 
